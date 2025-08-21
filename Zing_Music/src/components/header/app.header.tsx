@@ -19,6 +19,7 @@ import MoreIcon from "@mui/icons-material/MoreVert"
 import Container from "@mui/material/Container"
 import Avatar from "@mui/material/Avatar"
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -62,6 +63,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }))
 
 export default function AppHeader() {
+  const router = useRouter()
   const [anchorEl, setAnchorEl] = React.useState(null)
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null)
 
