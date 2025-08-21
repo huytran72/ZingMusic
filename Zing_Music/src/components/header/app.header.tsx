@@ -105,7 +105,12 @@ export default function AppHeader() {
       anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
     >
       <MenuItem>
-        <Link href={"/profile"}>Profile</Link>
+        <Link
+          href={"/profile"}
+          style={{ color: "unset", textDecoration: "none" }}
+        >
+          Profile
+        </Link>
       </MenuItem>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
       <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
