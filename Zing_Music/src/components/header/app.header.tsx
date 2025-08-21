@@ -188,8 +188,8 @@ export default function AppHeader() {
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <span>Playlist</span>
-            <span>Playlist</span>
-            <span>Playlist</span>
+            <span>Likes</span>
+            <span>Upload</span>
 
             <IconButton
               size="large"
