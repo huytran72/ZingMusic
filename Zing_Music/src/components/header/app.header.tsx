@@ -193,6 +193,10 @@ export default function AppHeader() {
                 gap: "15px",
                 alignItems: "center",
                 cursor: "pointer",
+                a: {
+                  color: "unset",
+                  textDecoration: "none",
+                },
               }}
             >
               <Link href={"/playlist"}>Playlists</Link>
