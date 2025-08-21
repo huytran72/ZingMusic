@@ -186,7 +186,14 @@ export default function AppHeader() {
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              gap: "15px",
+              alignItems: "center",
+              cursor: "pointer",
+            }}
+          >
             <span>Playlist</span>
             <span>Likes</span>
             <span>Upload</span>
