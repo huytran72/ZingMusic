@@ -170,6 +170,9 @@ export default function AppHeader() {
       </MenuItem>
     </Menu>
   )
+  const handleRedirectHome = () => {
+    router.push("/")
+  }
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -181,6 +184,7 @@ export default function AppHeader() {
               noWrap
               component="div"
               sx={{ display: { xs: "none", sm: "block" } }}
+              onClick={() => handleRedirectHome()}
             >
               ZING MUSIC
             </Typography>
