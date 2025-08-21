@@ -88,16 +88,16 @@ export default function AppHeader() {
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
+      //   anchorOrigin={{
+      //     vertical: "top",
+      //     horizontal: "right",
+      //   }}
       id={menuId}
       keepMounted
-      transformOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
+      //   transformOrigin={{
+      //     vertical: "top",
+      //     horizontal: "right",
+      //   }}
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
@@ -193,7 +193,7 @@ export default function AppHeader() {
               <span>Likes</span>
               <span>Upload</span>
 
-              <Avatar>HT</Avatar>
+              <Avatar onClick={handleProfileMenuOpen}>HT</Avatar>
             </Box>
             <Box sx={{ display: { xs: "flex", md: "none" } }}>
               <IconButton
