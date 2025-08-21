@@ -104,7 +104,9 @@ export default function AppHeader() {
       transformOrigin={{ horizontal: "right", vertical: "top" }}
       anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem>
+        <Link href={"/profile"}>Profile</Link>
+      </MenuItem>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
       <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
     </Menu>
@@ -193,7 +195,7 @@ export default function AppHeader() {
                 cursor: "pointer",
               }}
             >
-              <Link href={"/playlist"}>Playlist</Link>
+              <Link href={"/playlist"}>Playlists</Link>
               <Link href={"/likes"}>Likes</Link>
               <Link href={"/upload"}>Upload</Link>
 
