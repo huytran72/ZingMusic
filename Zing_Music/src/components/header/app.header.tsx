@@ -183,7 +183,7 @@ export default function AppHeader() {
               variant="h6"
               noWrap
               component="div"
-              sx={{ display: { xs: "none", sm: "block" } }}
+              sx={{ display: { xs: "none", sm: "block" }, cursor: "pointer" }}
               onClick={() => handleRedirectHome()}
             >
               ZING MUSIC
