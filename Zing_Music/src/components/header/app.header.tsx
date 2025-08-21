@@ -188,15 +188,9 @@ export default function AppHeader() {
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <span>Playlist</span>
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
+            <span>Playlist</span>
+            <span>Playlist</span>
+
             <IconButton
               size="large"
               edge="end"
