@@ -19,7 +19,7 @@ import MoreIcon from "@mui/icons-material/MoreVert"
 import Container from "@mui/material/Container"
 import Avatar from "@mui/material/Avatar"
 import Link from "next/link"
-import { useRouter } from "next/router"
+import { useRouter } from "next/navigation"
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
