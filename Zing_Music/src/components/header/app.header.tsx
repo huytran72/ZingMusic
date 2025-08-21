@@ -100,6 +100,8 @@ export default function AppHeader() {
       //   }}
       open={isMenuOpen}
       onClose={handleMenuClose}
+      transformOrigin={{ horizontal: "right", vertical: "top" }}
+      anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
