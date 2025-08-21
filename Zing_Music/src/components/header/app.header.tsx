@@ -18,6 +18,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications"
 import MoreIcon from "@mui/icons-material/MoreVert"
 import Container from "@mui/material/Container"
 import Avatar from "@mui/material/Avatar"
+import Link from "next/link"
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
