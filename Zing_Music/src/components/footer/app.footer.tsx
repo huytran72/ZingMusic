@@ -10,7 +10,10 @@ const AppFooter = () => {
 
   if (!hasMounted) return <></>
   return (
-    <AppBar position="fixed" color="primary" sx={{ top: "auto", bottom: 0 }}>
+    <AppBar
+      position="fixed"
+      sx={{ top: "auto", bottom: 0, background: "#f2f2f2" }}
+    >
       <Container>
         <AudioPlayer
           src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
