@@ -1,11 +1,13 @@
 "use client"
-import React from "react"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import { Settings } from "react-slick"
-import { Button } from "@mui/material"
-import { ChevronRight } from "@mui/icons-material"
+import { Box } from "@mui/material"
+import Button from "@mui/material/Button/Button"
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
+import ChevronRightIcon from "@mui/icons-material/ChevronRight"
+import Divider from "@mui/material/Divider"
 
 const MainSlider = () => {
   const settings: Settings = {
