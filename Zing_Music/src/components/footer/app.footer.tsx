@@ -1,9 +1,13 @@
 "use client"
+import { useHasMounted } from "@/utils/customHook"
 import AppBar from "@mui/material/AppBar"
 import AudioPlayer from "react-h5-audio-player"
 import "react-h5-audio-player/lib/styles.css"
 
 const AppFooter = () => {
+  const hasMounted = useHasMounted()
+
+  if (!hasMounted) return null
   return (
     <AppBar position="fixed" color="primary" sx={{ top: "auto", bottom: 0 }}>
       <AudioPlayer
