@@ -13,7 +13,11 @@ const MainSlider = () => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-    nextArrow: <Box sx={{ background: "blue" }}>Next</Box>,
+    nextArrow: (
+      <Box component={"h1"} sx={{ background: "blue" }}>
+        Next
+      </Box>
+    ),
     prevArrow: <Box sx={{ background: "red" }}>Prev</Box>,
   }
   return (
