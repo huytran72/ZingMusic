@@ -7,7 +7,7 @@ import "react-h5-audio-player/lib/styles.css"
 const AppFooter = () => {
   const hasMounted = useHasMounted()
 
-  if (!hasMounted) return null
+  if (!hasMounted) return <></>
   return (
     <AppBar position="fixed" color="primary" sx={{ top: "auto", bottom: 0 }}>
       <AudioPlayer
