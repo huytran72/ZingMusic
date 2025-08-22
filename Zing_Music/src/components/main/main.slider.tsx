@@ -63,7 +63,7 @@ const MainSlider = () => {
       sx={{
         margin: "0 60px",
         ".abc": {
-          padding: "0 15px",
+          padding: "0 10px",
         },
         h3: {
           border: "1px solid #ccc",
@@ -75,22 +75,22 @@ const MainSlider = () => {
       <h2>Multiple Tracks</h2>
       <Slider {...settings}>
         <div>
-          <h3>Track 1</h3>
+          <h3 className="abc">Track 1</h3>
         </div>
         <div>
-          <h3>Track 2</h3>
+          <h3 className="abc">Track 2</h3>
         </div>
         <div>
-          <h3>Track 3</h3>
+          <h3 className="abc">Track 3</h3>
         </div>
         <div>
-          <h3>Track 4</h3>
+          <h3 className="abc">Track 4</h3>
         </div>
         <div>
-          <h3>Track 5</h3>
+          <h3 className="abc">Track 5</h3>
         </div>
         <div>
-          <h3>Track 6</h3>
+          <h3 className="abc">Track 6</h3>
         </div>
       </Slider>
       <Divider />
