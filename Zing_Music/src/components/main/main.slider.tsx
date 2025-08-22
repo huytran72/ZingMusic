@@ -59,7 +59,17 @@ const MainSlider = () => {
   }
 
   return (
-    <Box>
+    <Box sx={{
+        margin: "0 60px"
+        ".abc": {
+            padding: "0 15px"
+        },
+        "h3": {
+            border: "1px solid #ccc",
+            padding: "20px",
+            height: "150px",
+        }
+    }}>
       <h2>Multiple Tracks</h2>
       <Slider {...settings}>
         <div>
