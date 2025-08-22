@@ -4,14 +4,17 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import { Settings } from "react-slick"
+import { Box } from "@mui/material"
 
 const MainSlider = () => {
   const settings: Settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   }
   return (
     <Slider {...settings}>
