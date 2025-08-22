@@ -14,7 +14,7 @@ const AppFooter = () => {
       position="fixed"
       sx={{ top: "auto", bottom: 0, background: "#f2f2f2" }}
     >
-      <Container>
+      <Container sx={{ display: "flex", gap: 10 }}>
         <AudioPlayer
           src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
           volume={0.5}
