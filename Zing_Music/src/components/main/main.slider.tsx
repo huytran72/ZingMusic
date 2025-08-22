@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import { Settings } from "react-slick"
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box"
 import Button from "@mui/material/Button/Button"
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
@@ -59,17 +59,19 @@ const MainSlider = () => {
   }
 
   return (
-    <Box sx={{
-        margin: "0 60px"
+    <Box
+      sx={{
+        margin: "0 60px",
         ".abc": {
-            padding: "0 15px"
+          padding: "0 15px",
         },
-        "h3": {
-            border: "1px solid #ccc",
-            padding: "20px",
-            height: "150px",
-        }
-    }}>
+        h3: {
+          border: "1px solid #ccc",
+          padding: "20px",
+          height: "150px",
+        },
+      }}
+    >
       <h2>Multiple Tracks</h2>
       <Slider {...settings}>
         <div>
