@@ -3,14 +3,13 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 
 const MainSlider = () => {
-  return (
-    var settings = {
+  var settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
-  };
+    slidesToScroll: 1,
+  }
   return (
     <Slider {...settings}>
       <div>
@@ -32,7 +31,6 @@ const MainSlider = () => {
         <h3>6</h3>
       </div>
     </Slider>
-  );
   )
 }
 
