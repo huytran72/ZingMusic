@@ -29,7 +29,8 @@ const AppFooter = () => {
             minWidth: "100%",
           }}
         >
-          <div></div>
+          <div style={{ color: "#333" }}>Harry</div>
+          <div style={{ color: "black" }}>Who I am?</div>
         </div>
       </Container>
     </AppBar>
