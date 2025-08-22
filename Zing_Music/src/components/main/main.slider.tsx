@@ -13,8 +13,8 @@ const MainSlider = () => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: <Box>Next</Box>,
+    prevArrow: <Box>Prev</Box>,
   }
   return (
     <Slider {...settings}>
