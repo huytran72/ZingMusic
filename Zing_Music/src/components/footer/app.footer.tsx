@@ -18,7 +18,7 @@ const AppFooter = () => {
         <AudioPlayer
           src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
           volume={0.5}
-          // Try other props!
+          style={{ boxShadow: "none" }}
         />
       </Container>
     </AppBar>
