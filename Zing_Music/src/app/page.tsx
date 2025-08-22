@@ -1,6 +1,12 @@
 import AppHeader from "@/components/header/app.header"
+import MainSlider from "@/components/main/main.slider"
 import App from "next/app"
+import { Main } from "next/document"
 
 export default function HomePage() {
-  return <div>Home Page</div>
+  return (
+    <div>
+      <MainSlider />
+    </div>
+  )
 }
