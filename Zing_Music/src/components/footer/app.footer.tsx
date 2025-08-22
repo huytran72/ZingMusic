@@ -26,10 +26,10 @@ const AppFooter = () => {
             justifyContent: "center",
             alignItems: "start",
             flexDirection: "column",
-            minWidth: "100%",
+            minWidth: 100,
           }}
         >
-          <div style={{ color: "#333" }}>Harry</div>
+          <div style={{ color: "#ccc" }}>Harry</div>
           <div style={{ color: "black" }}>Who I am?</div>
         </div>
       </Container>
