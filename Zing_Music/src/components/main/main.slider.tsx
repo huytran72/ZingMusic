@@ -10,16 +10,6 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 import Divider from "@mui/material/Divider"
 
 const MainSlider = () => {
-  const settings: Settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  }
-
   const NextArrow = (props: any) => {
     return (
       <Button
@@ -56,6 +46,16 @@ const MainSlider = () => {
         <ChevronLeftIcon />
       </Button>
     )
+  }
+
+  const settings: Settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   }
 
   return (
