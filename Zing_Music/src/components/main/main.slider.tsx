@@ -44,6 +44,7 @@ const MainSlider = (props: IProps) => {
         onClick={props.onClick}
         sx={{
           position: "absolute",
+          left: 0,
           top: "25%",
           zIndex: 2,
           minWidth: 30,
@@ -73,13 +74,14 @@ const MainSlider = (props: IProps) => {
           padding: "0 10px",
           img: {
             height: 150,
-            width: 150,
+            width: 160,
+            padding: "0 15px",
           },
         },
         h3: {
           border: "1px solid #ccc",
-          padding: "20px",
-          height: "150px",
+          padding: "100px",
+          height: "200px",
         },
       }}
     >
