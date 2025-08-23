@@ -9,22 +9,23 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 import Divider from "@mui/material/Divider"
 
-interface IPops {
+interface IProps {
   data: ITrackTop[]
   title: string
 }
 
-const MainSlider = (props: IPops) => {
+const MainSlider = (props: IProps) => {
   const { data, title } = props
   const NextArrow = (props: any) => {
     return (
       <Button
-        variant="outlined" // Change to "contained"
+        color="inherit"
+        variant="contained" // Change to "contained"
         onClick={props.onClick}
         sx={{
           position: "absolute",
-          top: "50%",
           right: 25,
+          top: "50%",
           zIndex: 2,
           minWidth: 30,
           width: 35,
@@ -38,13 +39,12 @@ const MainSlider = (props: IPops) => {
   const PrevArrow = (props: any) => {
     return (
       <Button
-        // color="inherit"
-        variant="outlined"
+        color="inherit"
+        variant="contained"
         onClick={props.onClick}
         sx={{
           position: "absolute",
           top: "50%",
-          left: 0,
           zIndex: 2,
           minWidth: 30,
           width: 35,
