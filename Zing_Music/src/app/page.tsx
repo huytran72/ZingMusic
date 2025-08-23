@@ -15,7 +15,7 @@ export default async function HomePage() {
   // })
   // console.log("Check server:", await res.json())
 
-  const res = await sendRequest({
+  const res = await sendRequest<IBackendRes>({
     url: "http://localhost:8000/api/v1/tracks/top",
     method: "POST",
     body: {
