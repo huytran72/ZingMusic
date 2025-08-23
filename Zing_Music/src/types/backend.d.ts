@@ -19,7 +19,6 @@ declare global {
       type: string
     }
     isDeleted: boolean
-    __v: number
     createdAt: string
     updatedAt: string
   }
