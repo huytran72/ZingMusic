@@ -11,6 +11,7 @@ import Divider from "@mui/material/Divider"
 
 interface IPops {
   data: ITrackTop[]
+  title: string
 }
 
 const MainSlider = (props: IPops) => {
@@ -36,6 +37,7 @@ const MainSlider = (props: IPops) => {
   const PrevArrow = (props: any) => {
     return (
       <Button
+        // color="inherit"
         variant="outlined"
         onClick={props.onClick}
         sx={{
