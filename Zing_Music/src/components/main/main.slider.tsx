@@ -85,24 +85,18 @@ const MainSlider = (props: IPops) => {
     >
       <h2>Multiple Tracks</h2>
       <Slider {...settings}>
-        <div className="track">
-          <h3>Track 1</h3>
-        </div>
-        <div className="track">
-          <h3>Track 2</h3>
-        </div>
-        <div className="track">
-          <h3>Track 3</h3>
-        </div>
-        <div className="track">
-          <h3>Track 4</h3>
-        </div>
-        <div className="track">
-          <h3>Track 5</h3>
-        </div>
-        <div className="track">
-          <h3>Track 6</h3>
-        </div>
+        {data.map((track) => {
+          return (
+            <div className="track" key={track.id}>
+              <img
+                src={`${process.env.NEXT_PUBLIC_API_URL}/images/${track.imgUrl}`}
+                alt={track.title}
+              />
+              <h4>{track.title}</h4>
+              <h5>{track.description}</h5>
+            </div>
+          )
+        })}
       </Slider>
       <Divider />
     </Box>
