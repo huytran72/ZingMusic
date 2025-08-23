@@ -15,10 +15,11 @@ interface IPops {
 }
 
 const MainSlider = (props: IPops) => {
+  const { data, title } = props
   const NextArrow = (props: any) => {
     return (
       <Button
-        variant="outlined"
+        variant="outlined" // Change to "contained"
         onClick={props.onClick}
         sx={{
           position: "absolute",
@@ -68,8 +69,12 @@ const MainSlider = (props: IPops) => {
     <Box
       sx={{
         margin: "0 60px",
-        ".abc": {
+        ".track": {
           padding: "0 10px",
+          img: {
+            height: "150px",
+            width: "150px",
+          },
         },
         h3: {
           border: "1px solid #ccc",
@@ -80,22 +85,22 @@ const MainSlider = (props: IPops) => {
     >
       <h2>Multiple Tracks</h2>
       <Slider {...settings}>
-        <div className="abc">
+        <div className="track">
           <h3>Track 1</h3>
         </div>
-        <div className="abc">
+        <div className="track">
           <h3>Track 2</h3>
         </div>
-        <div className="abc">
+        <div className="track">
           <h3>Track 3</h3>
         </div>
-        <div className="abc">
+        <div className="track">
           <h3>Track 4</h3>
         </div>
-        <div className="abc">
+        <div className="track">
           <h3>Track 5</h3>
         </div>
-        <div className="abc">
+        <div className="track">
           <h3>Track 6</h3>
         </div>
       </Slider>
