@@ -24,7 +24,7 @@ const MainSlider = (props: IPops) => {
         sx={{
           position: "absolute",
           top: "50%",
-          right: 0,
+          right: 25,
           zIndex: 2,
           minWidth: 30,
           width: 35,
@@ -83,7 +83,7 @@ const MainSlider = (props: IPops) => {
         },
       }}
     >
-      <h2>Multiple Tracks</h2>
+      <h2>{title}</h2>
       <Slider {...settings}>
         {data.map((track) => {
           return (
