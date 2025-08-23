@@ -87,7 +87,7 @@ const MainSlider = (props: IPops) => {
       <Slider {...settings}>
         {data.map((track) => {
           return (
-            <div className="track" key={track.id}>
+            <div className="track" key={track._id}>
               <img
                 src={`${process.env.NEXT_PUBLIC_API_URL}/images/${track.imgUrl}`}
                 alt={track.title}
