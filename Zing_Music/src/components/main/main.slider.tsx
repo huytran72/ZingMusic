@@ -24,8 +24,8 @@ const MainSlider = (props: IProps) => {
         onClick={props.onClick}
         sx={{
           position: "absolute",
-          right: 25,
-          top: "50%",
+          right: -15,
+          top: "25%",
           zIndex: 2,
           minWidth: 30,
           width: 35,
@@ -44,7 +44,7 @@ const MainSlider = (props: IProps) => {
         onClick={props.onClick}
         sx={{
           position: "absolute",
-          top: "50%",
+          top: "25%",
           zIndex: 2,
           minWidth: 30,
           width: 35,
@@ -72,8 +72,8 @@ const MainSlider = (props: IProps) => {
         ".track": {
           padding: "0 10px",
           img: {
-            height: "150px",
-            width: "150px",
+            height: 150,
+            width: 150,
           },
         },
         h3: {
@@ -89,7 +89,7 @@ const MainSlider = (props: IProps) => {
           return (
             <div className="track" key={track._id}>
               <img
-                src={`${process.env.NEXT_PUBLIC_API_URL}/images/${track.imgUrl}`}
+                src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/images/${track.imgUrl}`}
                 alt={track.title}
               />
               <h4>{track.title}</h4>
