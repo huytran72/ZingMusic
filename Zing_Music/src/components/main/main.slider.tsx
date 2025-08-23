@@ -9,7 +9,11 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 import Divider from "@mui/material/Divider"
 
-const MainSlider = () => {
+interface IPops {
+  data: ITrackTop[]
+}
+
+const MainSlider = (props: IPops) => {
   const NextArrow = (props: any) => {
     return (
       <Button
