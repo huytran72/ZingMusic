@@ -97,8 +97,8 @@ const MainSlider = (props: IProps) => {
               />
               <Link href={`/track/${track._id}`}>
                 <h4>{track.title}</h4>
-                <h5>{track.description}</h5>
               </Link>
+              <h5>{track.description}</h5>
             </div>
           )
         })}
